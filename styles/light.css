@@ -1,12 +1,58 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --header-title: #FFC2E6;
+  --accent-color: #FF0070;
+  --title-decor: #353430;
+  --bg-color-decor: #FF8DCB;
+  --article-title-color: #353430;
+  --content-color: #353430;
+  --accent-link: #FF8DCB;
+  --bg-image: url(../images/cover-image-light.png);
+  --border: 1px solid transparent;
+  --button-color: #353430;
+  --border-hover: 1px solid #32312D66;
+  --border-enabled: 1px solid #353430;
+  --header-decor: 1px solid #353430;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --header-title: #FFC2E6;
+    --accent-color: #FF0070;
+    --title-decor: #353430;
+    --bg-color-decor: #FF8DCB;
+    --article-title-color: #353430;
+    --content-color: #353430;
+    --accent-link: #FF8DCB;
+    --bg-image: url(../images/cover-image-light.png);
+    --border: 1px solid transparent;
+    --button-color: #353430;
+    --border-hover: 1px solid #32312D66;
+    --border-enabled: 1px solid #353430;
+    --header-decor: 1px solid #353430;
+  }
+  .header__logo {
+    display: none;
+  }
+    
+  .header__theme-menu-button_active {
+    border: var(--border-enabled);
+  }
+    
+  .header__theme-menu-button:hover {
+    border: var(--border-hover);
+  }
+  
+}
+
+.theme_light .header__logo {
+  display: none;
+}
+
+.theme_light .header__theme-menu-button_active {
+  border: var(--border-enabled);
+}
+
+.theme_light .header__theme-menu-button:hover {
+  border: var(--border-hover);
 }

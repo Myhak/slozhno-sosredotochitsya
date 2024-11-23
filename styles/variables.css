@@ -1,4 +1,35 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+
+:root {
+  --font-weight: 400;
+  --font-size: 18px;
+  --line-height: 130%;
+  --title-weight: 700;
+  --menu-line-height: 18px;
+  --focus-line-height: 130px;
+  --focus-mobile: 96px;
+  --accent-color: #FF0070;
+  --header-title: #DB00FF;
+  --title-decor: #000028;
+  --bg-color-decor: #FF0070;
+  --article-title-color: #FF0070;
+  --content-color: #F1B2CE;
+  --accent-link: #FF0070;
+  --bg-image: url(../images/cover-image-dark.png);
+  --border: 1px solid transparent;
+  --border-focus: none;
+  --border-hover: 1px solid #FF007066;
+  --border-enabled: 1px solid #FF0070;
+  --header-decor: 1px solid #FF0070;
+  --button-color: #FF0070;
+  --button-bg: transparent;
+  --focus-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --main-gap: 10px;
+}
+
+@media (width >= 768px) {
+  :root {
+    --focus-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --main-gap: 20px;
+  }
+}
+
