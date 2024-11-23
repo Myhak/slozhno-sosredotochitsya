@@ -8,6 +8,7 @@
   --content-color: #353430;
   --accent-link: #FF8DCB;
   --bg-image: url(../images/cover-image-light.png);
+  --bg-color-page: #FFF1F7;
   --border: 1px solid transparent;
   --button-color: #353430;
   --border-hover: 1px solid #32312D66;
@@ -25,6 +26,7 @@
     --content-color: #353430;
     --accent-link: #FF8DCB;
     --bg-image: url(../images/cover-image-light.png);
+    --bg-color-page: #FFF1F7;
     --border: 1px solid transparent;
     --button-color: #353430;
     --border-hover: 1px solid #32312D66;

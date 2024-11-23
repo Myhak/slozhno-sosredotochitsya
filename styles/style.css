@@ -3,10 +3,10 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: var(--bg-image);
+  background-color: var(--bg-color-page);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 0 10px;
   font-family: IBM Plex mono, bold;
 }
 
@@ -17,7 +17,7 @@
   justify-items: end;
   block-size: 100vh;
   min-block-size: 668px;
-  padding: 20px 0;
+  padding: 20px 10px;
 }
 
 .header__title {
@@ -41,7 +41,7 @@
   border-inline-end: var(--header-decor);
   border-block-start: var(--header-decor);
   inset-block-start: 10px;
-  inset-inline-end: 0;
+  inset-inline-end: 10px;
 }
 
 .decorated-zone::after {
@@ -52,7 +52,7 @@
   border-inline-start: var(--header-decor);
   border-block-end: var(--header-decor);
   inset-block-end: 10px;
-  inset-inline-start: 0;
+  inset-inline-start: 10px;
 }
 
 .header__description {
@@ -89,7 +89,7 @@
   font-size: var(--font-size);
   font-weight: var(--font-weight);
   top: 12px;
-  right: 28px;
+  right: 38px;
 }
 
 .header__logo::after {
@@ -132,9 +132,10 @@
   font-size: var(--font-size);
   line-height: var(--line-height);
   margin-block-start: 40px;
+  padding: 0 10px;
 }
 
-.main__article:not(:last-of-type){
+.main__article:not(:last-of-type) {
   margin-block-end: 50px;
 }
 
@@ -226,6 +227,7 @@
   block-size: 100vh;
   min-block-size: 668px;
   margin-block-start: 40px;
+  padding: 10px 10px;
 }
 
 .footer__title {
@@ -238,24 +240,25 @@
 }
 
 @media ( width >= 768px ) {
-  .page {
-    padding: 0 20px;
-  }
   
   .header {
     min-block-size: 1024px;
+    padding: 20px 20px;
   }
 
   .decorated-zone::before {
     inset-block-start: 20px;
+    inset-inline-end: 20px;
   }
 
   .decorated-zone::after {
     inset-block-end: 20px;
+    inset-inline-start: 20px;
   }
 
   .header__logo {
     top: 21px;
+    right: 48px;
   }
 
   .header__title {
@@ -274,6 +277,7 @@
 
   .main {
     margin-block-start: 60px;
+    padding: 0 20px;
   }
 
   .main__article {
@@ -282,7 +286,7 @@
     gap: var(--main-gap);
   }
 
-  .main__article:not(:last-of-type){
+  .main__article:not(:last-of-type) {
     margin-block-end: 80px;
   }
 
@@ -336,6 +340,7 @@
   .footer {
     min-block-size: 1024px;
     margin-block-start: 60px;
+    padding: 20px 20px;
   }
 }
 
