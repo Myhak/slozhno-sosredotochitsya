@@ -8,21 +8,16 @@
   --header-title: #DB00FF;
   --bg-image: url(../images/cover-image-dark.png);
   --bg-color-page: #000028;
+  --link-underline: 1px solid #F1B2CE;
   --border: 1px solid transparent;
   --button-color: #FF0070;
+  --border-focus: 1px solid #FF0070;
   --border-hover: 1px solid #FF007066;
   --border-enabled: 1px solid #FF0070;
   --header-decor: 1px solid #FF0070;
 }
 
-.theme__dark .header__logo {
+.theme_dark .header__logo {
   display: block;
 }
 
-.theme_dark .header__theme-menu-button_active {
-  border: var(--border-enabled);
-}
-
-.theme_dark .header__theme-menu-button:hover {
-  border: var(--border-hover);
-}

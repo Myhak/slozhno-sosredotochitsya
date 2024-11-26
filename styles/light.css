@@ -9,8 +9,10 @@
   --accent-link: #FF8DCB;
   --bg-image: url(../images/cover-image-light.png);
   --bg-color-page: #FFF1F7;
+  --link-underline: 1px solid #353430;
   --border: 1px solid transparent;
   --button-color: #353430;
+  --border-focus: 1px solid #353430;
   --border-hover: 1px solid #32312D66;
   --border-enabled: 1px solid #353430;
   --header-decor: 1px solid #353430;
@@ -27,34 +29,21 @@
     --accent-link: #FF8DCB;
     --bg-image: url(../images/cover-image-light.png);
     --bg-color-page: #FFF1F7;
+    --link-underline: 1px solid #353430;
     --border: 1px solid transparent;
     --button-color: #353430;
+    --border-focus: 1px solid #353430;
     --border-hover: 1px solid #32312D66;
     --border-enabled: 1px solid #353430;
     --header-decor: 1px solid #353430;
   }
+
   .header__logo {
     display: none;
   }
-    
-  .header__theme-menu-button_active {
-    border: var(--border-enabled);
-  }
-    
-  .header__theme-menu-button:hover {
-    border: var(--border-hover);
-  }
-  
 }
 
 .theme_light .header__logo {
   display: none;
 }
 
-.theme_light .header__theme-menu-button_active {
-  border: var(--border-enabled);
-}
-
-.theme_light .header__theme-menu-button:hover {
-  border: var(--border-hover);
-}
